@@ -248,7 +248,7 @@ h3 {
     width: 90%; 
     margin: 10px auto;
     font-size: 20px;
- margin-top: -5px;
+    margin-top: -5px;
 }
 
 
@@ -268,7 +268,7 @@ h3 {
 }
 
 .FAQ {
-    margin: 20px; 
+    margin: 0 auto; 
     text-align: center; 
     padding: 20px; 
     background-color: #310000; 
