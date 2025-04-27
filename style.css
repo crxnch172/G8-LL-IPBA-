@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box;  */
+    /* overflow-x: hidden; */
+}
+
+.header {
+    width: 100%;
+    background-color: #810003;
+    color: #fff8d3; 
+    height: 100px;
+    margin-top: -50px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    background-color: #810003;
+    padding: 10px 20px;
+    display: flex;
+    font-weight: bold;
+}
+
+button {
+  margin-top: 10px;
+}
+
+h1 {
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.header h2{
+    color: #fff8d3; 
+    text-align: center; 
+    padding: 15px;
+}
+
+.paragraph4{
+    font-size: 115%;
+    font-family: 'Montserrat', 'san-serif';
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 10px;
+ }
+
+
+.logo img {
+    height: 80px;
+    margin-right: 20px;
+}
+
+.page-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+
+.page-links li {
+    margin-right: 50px;
+}
+
+.page-links li a {
+    text-decoration: none;
+    color: #fff8d3;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.page-links li a:hover { 
+    text-decoration: none;
+    color: #fcba1a;
+    border-bottom: 2px solid #fca91a;
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+/* Setting container to flex and width to 80% of view port */
+.container{
+    display: flex;
+    width: 80%;
+}
+/*Adding background image to each section*/
+.one{
+    background: url(https://i.pinimg.com/736x/17/92/b7/1792b75831efb66c503d61326ccf928c.jpg);
+}
+.two{
+    background: url(https://i.pinimg.com/736x/d2/88/69/d28869fd8518663222dbd9269c4210d9.jpg);
+}
+.three{
+    background: url(https://i.pinimg.com/736x/0c/0a/d2/0c0ad2c8e1250f392a188ebe1c510574.jpg);
+}
+.four{
+    background: url(https://recipes.net/wp-content/uploads/2023/12/how-to-cook-the-perfect-steak-on-a-grill-1703468191.jpg);
+}
+/* Background properties and transition effect to section  */
+.section{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    cursor: pointer;
+    flex: 0.2;
+    margin:8px;
+    position: relative;
+    transition: all 0.7s ease-out;
+} 
+
+/* section with active class will grow flex to 3 times  */
+.section.active{
+    flex: 3;
+}
+
+
+body {
+ 
+    padding-top: 50px;
+    margin: 0;
+
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #490000; 
+
+    justify-content: center;
+
+
+}
+
+.container {
+    display: flex; 
+    width: 95vw;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.panel {
+    color: #fff;
+    height: 80vh;
+    border-radius: 7px;
+    cursor: pointer;
+
+    flex: 0.5;
+
+    margin: 0.5em;
+
+    position: relative;
+
+    border: 2px solid rgba(245, 176, 2, 0.689);
+
+    transition: flex 0.7s ease-in-out;
+}
+
+
+.panel:nth-child(1) {
+    background: url("BackGround-1.jpg") center top/cover no-repeat #1b1b1b;
+}
+
+.panel:nth-child(2) {
+    background: url("BackGround-2.jpg") center top/cover no-repeat #1b1b1b;
+}
+
+.panel:nth-child(3) {
+    background: url("BackGround-3.jpg") center top/cover no-repeat #1b1b1b;
+}
+
+.panel:nth-child(4) {
+    background: url("BackGround-4.jpg") center top/cover no-repeat #1b1b1b;
+}
+
+h3 {
+    margin: 0;
+ 
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+
+    font-size: 24px;
+ 
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 4;
+}
+
+.panel.active h3 {
+    opacity: 1;
+
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.logo img {
+    margin-top: 10px;
+    height: 80px;
+    margin-left: 30px;
+}
+
+.question {
+    background-color: #fff8d3;
+    color: #eb0a05;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 20px;
+    width: 90%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s;
+    margin: 10px auto; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+
+.active, .question:hover {
+    background-color: #fcba1a;
+}
+
+.question:after {
+    content: '\2795'; 
+    font-size: 13px;
+    color: #310000;
+    background-color: #fcba1a;
+    float: right;
+    margin-left: 5px;
+}
+
+
+
+.answer {
+    padding: 0 20px;
+    background-color: #fff8d3;
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: left;
+    width: 90%; 
+    margin: 10px auto;
+    font-size: 20px;
+    margin-top: -5px;
+}
+
+
+.wrapper {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.FAQ h1 {
+    color: #fff8d3;
+    background-color: #310000;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.FAQ {
+    margin: 0 auto; 
+    text-align: center; 
+    padding: 20px; 
+    background-color: #310000; 
+    width: 90%;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 70px;
+}
+
+.intro {
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    background: url("introbg.png") center top/cover no-repeat #1b1b1b;
+    padding: 100px; 
+}
+
+.intro img {
+    max-width: 50%;
+    margin-right: 20px; 
+}
+
+.intro div {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.intro h1 {
+    color: #fff8d3;
+    font-size: 2em;
+    margin: 0;
+}
+
+.intro p {
+    color: #fff8d3;
+    font-size: 1.2em;
+    margin-top: 2px;
+}
+
+.intro button {
+    color: #fff8d3;
+    background-color: #810003;
+    width: 25%;
+    height: 35px;
+    border-radius: 7px;
+    border: 1px solid #fcba1a;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+
+.intro button:hover {
+    color: #fff8d3;
+    background-color: #5f0000;
+    width: 25%;
+    height: 35px;
+    border-radius: 7px;
+    border: 1px solid #fcba1a;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+
+
+.menu {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1200px; 
+}
+
+.product {
+    flex: 0 0 45%; 
+    background-color: #fff8d3;
+    border: 1px solid #fcba1a;
+    margin: 20px 1%; 
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.product:hover img {
+    transform: scale(1.03);
+}
+
+.product h4 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #810003;
+}
+
+.product p {
+    font-size: 1em;
+    color: #310000;
+}
+
+.menuheader {
+    color: #fff8d3;
+    background-color: #310000;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: -35px; 
+    font-size: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #5f0000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #eb0a05;
+    border-radius: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fcba1a;
+  }
+
+.testimonial6 h1,
+.testimonial6 h2,
+.testimonial6 h3,
+.testimonial6 h4,
+.testimonial6 h5,
+.testimonial6 h6 {
+  color: #3e4555;
+}
+
+.testimonial6 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+  
+
+}
+
+.testimonial6 h5 {
+    line-height: 22px;
+    font-size: 18px;
+}
+
+.testimonial6 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+	font-size: 16px;
+}
+
+.testimonial6 .testi6 {
+  border-right: 1px solid rgba(120, 130, 140, 0.13);
+}
+
+.testimonial6 .testi6 .nav-link {
+  border-radius: 0px;
+  margin: 8px -2px 8px 0;
+}
+
+.testimonial6 .testi6 .nav-link img {
+  width: 70px;
+  opacity: 0.5;
+}
+
+.testimonial6 .testi6 .nav-link.active {
+  background: transparent;
+  color: #8d97ad;
+  border-right: 3px solid #2cdd9b;
+}
+
+.testimonial6 .testi6 .nav-link.active img {
+  opacity: 1;
+}
+
+.testimonial6 .btn-danger {
+    background: #ff4d7e !important;
+    border: 1px solid #ff4d7e !important;
+}
+
+.testimonial6 .btn-md {
+    padding: 18px 0px;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+}
+
+@media (max-width: 767px) {
+	.testimonial6 .testi6 .nav-link {
+    margin: 0px 0px -2px 0;
+    padding: 10px;
+	}
+	.testimonial6 .testi6 {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: row !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+    border-right: 0px solid rgba(120, 130, 140, 0.13);
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+    margin-bottom: 40px;
+	}
+	.testimonial6 .testi6 .nav-link img {
+    width: 40px;
+	}
+	.testimonial6 .testi6 .nav-link.active {
+			border-right: 0px solid #2cdd9b;
+			border-bottom: 3px solid #2cdd9b;
+	}
+}
+
+.journey-section {
+    padding: 100px 5% 50px;
+    background: #490000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.journey-section h1 {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.journey-page-1{
+    background-color: #5f0000;
+}
+
+.journey-milestone p{
+    color: #fff;
+}
+
+.section1{
+    margin: 20px;
+}
+
+.paragraph{
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.journey-header{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.journey-date{
+    font-size: 2rem;
+    color: #FFF;
+    font-weight: 650;
+}
