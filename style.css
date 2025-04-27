@@ -270,6 +270,7 @@ h3 {
 .FAQ {
     margin: 20px; 
 text-align: center; 
+align-items: center;
     padding: 20px; 
     background-color: #310000; 
     width: 90%;
