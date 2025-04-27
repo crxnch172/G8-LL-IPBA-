@@ -246,8 +246,9 @@ h3 {
     transition: max-height 0.2s ease-out;
     text-align: left;
     width: 90%; 
-    margin: 20px;
+    margin: 10px auto;
     font-size: 20px;
+ margin-top: -5px;
 }
 
 
